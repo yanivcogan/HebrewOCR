@@ -1,0 +1,6 @@
+
+venv/*
+.idea/*
+pdf/*
+secret/*
+__pycache__/*
