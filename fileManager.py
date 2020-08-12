@@ -7,6 +7,7 @@ import pathlib
 
 
 def get_file_paths_in_directory(root, base=""):
+    # returns the list of relative paths of all files within the supplied root directory
     files = []
     dir_content = listdir(root+base)
     for f in dir_content:
@@ -19,9 +20,11 @@ def get_file_paths_in_directory(root, base=""):
 
 
 def mkdir_p(path):
+    # creates all the required folders along the supplied path
     dir_path = Path(path).parent
     pathlib.Path(dir_path).mkdir(parents=True, exist_ok=True)
 
 
 def path_to_pdf(path):
+    # returns the supplied file path with the file extension replaced with ".pdf"
     return os.path.splitext(path)[0]+".pdf"
