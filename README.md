@@ -8,6 +8,8 @@ mysql-connector
 For pytesseract to function properly, first install tesseract:
 https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-alpha.20200328.exe
 
+When installing, make sure to download the Hebrew and Arabic language packs.
+
 After installing tesseract, set pytesseract.pytesseract.tesseract_cmd (in main.py) to the absolute path to the pytesseract.exe (should be somewhere inside the ProgramFiles folder)
 
 Put the documents into the /images folder, and run the program. The searchable pdf files will be output into the /pdf folder.
