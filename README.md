@@ -13,6 +13,11 @@ When installing, make sure to download the Hebrew and Arabic language packs.
 After installing tesseract, set pytesseract.pytesseract.tesseract_cmd (in main.py) to the absolute path to the pytesseract.exe (should be somewhere inside the ProgramFiles folder)
 
 Put the documents into the /images folder, and run the program. The searchable pdf files will be output into the /pdf folder.
+Note that the program won't work unless you either properly configure or disable the database related features (see below).
+
+The Pytesseract documentation is very useful:
+https://pypi.org/project/pytesseract/
+
 
 Database Installation:
 The program allows for the storage of the OCR results in a MySQL database, which can later be used to search documents according to their contents.
